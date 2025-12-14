@@ -1,5 +1,5 @@
 #include <benchmark/benchmark.h>
-#include <core.h>
+#include <core/core.h>
 
 static void BM_Factorial(benchmark::State& state)
 {

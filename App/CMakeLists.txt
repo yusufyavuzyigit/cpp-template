@@ -3,5 +3,5 @@ add_executable(App
 )
 
 target_include_directories(App PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_link_libraries(App PRIVATE Core)
+target_link_libraries(App PRIVATE core_lib)
 

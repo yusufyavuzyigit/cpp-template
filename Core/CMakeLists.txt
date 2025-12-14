@@ -1,4 +1,4 @@
-add_library(Core)
+add_library(core_lib)
 
 # CPM Package Example
 
@@ -23,16 +23,17 @@ add_library(Core)
 #     PUBLIC spdlog::spdlog
 # )
 
-target_sources(Core
+target_sources(core_lib
     PRIVATE
         src/core.cpp
 )
 
-target_include_directories(Core
+target_include_directories(core_lib
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/core
 )
 
-target_compile_features(Core PUBLIC cxx_std_17)
+target_compile_features(core_lib PUBLIC cxx_std_17)

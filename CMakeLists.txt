@@ -4,8 +4,9 @@ project(ProjName LANGUAGES CXX)
 option(ENABLE_TESTS "Build unit tests" OFF)
 option(ENABLE_BENCHMARKS "Build benchmarks" OFF)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 include(Cmake/CPM.cmake)
 set(CPM_DOWNLOAD_ALL FALSE)

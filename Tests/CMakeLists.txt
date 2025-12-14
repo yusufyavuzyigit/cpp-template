@@ -12,7 +12,7 @@ add_executable(core_tests
 
 target_link_libraries(core_tests
     PRIVATE
-        Core
+        core_lib
         Catch2::Catch2WithMain
 )
 

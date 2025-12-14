@@ -13,6 +13,6 @@ add_executable(core_benchmarks
 
 target_link_libraries(core_benchmarks
     PRIVATE
-        Core
+        core_lib
         benchmark::benchmark
 )
